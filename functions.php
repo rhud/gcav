@@ -31,3 +31,4 @@ unset($file, $filepath);
 
 // Register Custom Navigation Walker
 require_once('wp_bootstrap_navwalker.php');
+require_once('titles.php');

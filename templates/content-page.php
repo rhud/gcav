@@ -8,7 +8,7 @@
 	  <div class="inner">
 	  	<div class="col-sm-2"></div>
 			<div class="col-sm-8">
-				<h1><?php echo roots_title(); ?></h1>
+				<h1><?php echo title(); ?></h1>
 				<h3><?php echo the_excerpt(); ?></h3>
 			</div>
 			<div class="col-sm-2"></div>

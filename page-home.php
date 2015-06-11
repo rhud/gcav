@@ -7,22 +7,7 @@ Template Name: Home Page
 <div class="wrap hero" role="document">
 	<div id="slider" class="main">
 		<?php
-		$type = 'solutions';
-		$args = array('post_type' => $type, 'post_status' => 'publish', 'posts_per_page' => -1, 'caller_get_posts'=> 1);
-		$my_query = null;
-		$my_query = new WP_Query($args);
-		if( $my_query->have_posts() ) {
-		  while ($my_query->have_posts()) : $my_query->the_post(); ?>
-		    <div class="slide">
-		    	<img class="bg" src="<?=types_render_field("hero-img", array("raw"=>"true"))?>" />
-		    	<div class="element el1 from-right"><h2><span>imagine if...</span></h2></div>
-		    	<div class="element el2 from-left"><h2><span><?=types_render_field("hero-msg", array("separator"=>"</span> <br/><span>"))?></span></h2></div>
-		    </div>
-		    
-		   	<?php
-		  endwhile;
-		}
-		wp_reset_query();  // Restore global post data stomped by the_post().
+			echo get_new_royalslider(3);
 		?>
 		
 	</div>
@@ -35,7 +20,10 @@ Template Name: Home Page
 	<section class="solutions">
 		<div class="twinkling">
 			<div class="inner">
-				<h1>Solutions</h1>
+				<?php $recent = new WP_Query("page_id=114"); while($recent->have_posts()) : $recent->the_post();?>
+				<h1><?php the_title(); ?></h1>
+				<h3><?=types_render_field("excerpt", array("raw"=>"true"))?></h3>
+				<?php endwhile; ?>
 				
 				<?php
 				$type = 'solutions';
@@ -47,8 +35,8 @@ Template Name: Home Page
 				  while ($my_query->have_posts()) : $my_query->the_post(); ?>
 				    <div class="col-md-6 col-sm-6 col-lg-3">
 				    	<div class="solution">
-				    		<img src="<?=types_render_field("solution-img", array("raw"=>"true"))?>"/>
-				    		<div class="desc">
+				    		<div class="sol-img" style="background-image:url(<?=types_render_field("solution-img", array("raw"=>"true"))?>)"></div>
+				    		<div class="sol-desc">
 				    			<h2><?php the_title(); ?></h2>
 				    			<p><?php the_excerpt(); ?> </p>
 				    			<a href="<?php the_permalink(); ?>" class="btn btn-primary" role="button">Read More</a>

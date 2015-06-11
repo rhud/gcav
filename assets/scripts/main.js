@@ -65,16 +65,7 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
-        var slider = $("#slider").mostSlider({
-        	animation: 'slide',
-        	aniMethod: 'auto',
-        	aniSpeed: 1000,
-        	pauseTime: 6000,
-        	transparancy: true,
-        	contentClass: "element",
-        	sbsContent: true,
-        	contentAniDelay: 500
-        });
+        
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

@@ -10,8 +10,7 @@ $sidebar-sm-columns:    4;
 
 $brand-primary:         #fdbe19;
 $gold:					#fdbe19;
-$yellow:				#fee127;
-$grey:					#191919;
+$yellow:				lighten($gold, 10%);
 
 // Glyphicons path
 // -------------------------
@@ -25,6 +24,13 @@ $icon-font-path: "../vendor/bootstrap/fonts/";
 	font-family: "proxima-nova", helvetica, arial, sans-serif;
 	font-weight: 100;
 }
+
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%); 
+$gray-dark:              lighten($gray-base, 25%);  
+$gray:                   lighten($gray-base, 50%); 
+$gray-light:             lighten($gray-base, 92%); 
+$gray-lighter:           lighten($gray-base, 96%); 
 
 body {
 	@extend .proxima;

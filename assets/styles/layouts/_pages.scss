@@ -1,0 +1,126 @@
+.wrap.container.page {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	header {
+		width: 100%;
+		overflow: hidden;
+		margin: 100px 0px 0px;
+		padding: 0px;
+		text-align: center;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center center;
+		.inner {
+			margin: 0px auto;
+			.page-header {
+				border-bottom: none;
+				margin: 0px;
+			}
+		}
+		h1 { 
+			color: $gold;
+			padding: 40px 0px 0px;
+			@extend .Ample-Light;
+			font-size: 400%;
+		}
+	}
+	.page.inner {
+		margin: 0px auto 100px;
+		position: relative;
+		padding: 0px;
+		
+		main {
+			padding: 0px;
+			margin: 0px;
+		}
+			
+	}
+}
+
+.content {
+	padding: 0px 30px;
+	margin: 0px;
+	color: #222;
+	font-size: 16px;
+	width: 100%;
+	blockquote {
+		background: $gray-lighter;
+		border-radius: 4px;
+		border: 1px solid #ddd;
+		padding: 30px 50px;
+		margin: 0px 0px 50px;
+		&.white {
+			background: white;
+			box-shadow: 0px 0px 5px #CCC;
+		}
+		p {
+			margin: 10px 0px 10px;
+		}
+		a {
+			background: $gold;
+			color: black;
+			padding: 3px 8px;
+			border-radius: 4px;
+			font-weight: 400;
+			-webkit-box-decoration-break: clone;
+			-o-box-decoration-break: clone;
+			box-decoration-break: clone;
+			&:hover {
+				background: $yellow;
+				text-decoration: none;
+			}
+		}
+	}
+	img {
+		border-radius: 4px;
+		box-shadow: 0px 0px 3px #CCC;
+		border: 1px solid white;
+	}
+	.list-group-item {
+		background: $gray-lighter;
+	}
+	h2.hero {
+		text-align: center;
+		margin: 0px 15% 50px;
+		width: 70%;
+	}
+	h3 {
+		font-size: 22px;
+		line-height: 25px;
+		color: black;
+		margin: 20px 0px;
+	}
+	p {
+		margin: 20px 0px;
+	}
+	.block {
+		margin: 0px 0px 20px 0px;
+	}
+	.licensed {
+		text-align: center;
+		img {
+			border: none;
+			width: 50px;
+			height: 50px;
+			opacity: 0.5;
+			box-shadow: none;
+		}
+	}
+	.gold {
+		color: $gold;
+	}
+	.centered {
+		text-align: center;
+	}
+	.spacer {
+		margin-bottom: 50px;
+	}
+	.panel-body .list-group-item {
+		background: none;
+		border: none;
+		border-radius: 0px;
+		border-left: 5px solid $gold;
+		margin: 5px 0px;
+	}
+}

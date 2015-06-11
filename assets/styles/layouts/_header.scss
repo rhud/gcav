@@ -10,6 +10,13 @@ ul.nav {
 	li {
 		&:hover, &:focus {
 			background: none !important;
+			.dropdown-menu {
+				visibility: visible !important;
+				display: block !important;
+				> .active > a {
+					background-color: black;
+				}
+			}
 		}
 		a {
 			@extend .Ample-Regular;
@@ -122,7 +129,7 @@ header.smartheader {
 }
 
 nav.smartheader {
-	width: 60%;
+	width: 75%;
 	position: fixed;
 	top: 25px;
 	right: 0px;

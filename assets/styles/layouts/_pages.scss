@@ -128,4 +128,49 @@
 		border-left: 5px solid $gold;
 		margin: 5px 0px;
 	}
+
+	.ninja-forms-cont {
+		label {
+			display: none !important;
+		}
+		.ninja-forms-required-items {
+			display: none;
+		}
+		.ninja-forms-field {
+			border-radius: 4px;
+			border: 1px solid $gold !important;
+			padding: 5px 10px;
+			-webkit-appearance: none;
+			&#ninja_forms_field_5 {
+				background: $gold;
+				font-weight: 400;
+				text-transform: uppercase;
+				&:hover {
+					background: $gold-dark;
+				}
+			}
+		}
+		.ninja-forms-field-error {
+			p {
+				margin: 5px 0px;
+				padding: 5px 10px;
+				color: white;
+				background: $brand-danger;
+				display: inline-block;
+				border-radius: 4px;
+				font-size: 80%;
+				text-transform: uppercase;
+			}
+		}
+	}
+	.contact-block {
+		padding: 20px;
+		a {
+			background: none;
+			padding: 0px;
+		}
+		i.icon-location.dark {
+			opacity: 0 !important;
+		}
+	}
 }

@@ -55,7 +55,9 @@
         	}
         
         	init();
-        
+
+          $('#ninja_forms_field_3').attr("placeholder","Enquiry...");
+          $('.ninja-forms-field-error p').text("REQUIRED");
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

@@ -344,7 +344,7 @@ footer {
 				margin-bottom: 5px;
 				text-align: center;
 				&:hover {
-					background: $yellow;
+					background: $gold-dark;
 					text-decoration: none;
 				}
 			}
@@ -353,14 +353,12 @@ footer {
 		.contact {
 			padding-bottom: 20px;
 			margin-bottom: 20px;
-			border-bottom: 1px solid $gold;
 		}
 
 		.copyright {
-			text-align: right;
 			margin-bottom: 20px;
 			p {
-				font-size: 80%;
+				font-size: 90%;
 				a {
 					color: $gold;
 				}
@@ -511,7 +509,6 @@ and (orientation : landscape) {
 		.inner {
 			p {
 				font-size: 90%;
-				text-align: left;
 			}
 
 			.services {
@@ -521,6 +518,11 @@ and (orientation : landscape) {
 			}
 			.contact {
 				border-bottom: none;
+				p {
+					font-size: 100%;
+				}
+			}
+			.copyright {
 				p {
 					font-size: 100%;
 				}
@@ -595,6 +597,20 @@ and (orientation : landscape) {
 					}
 				}
 			}	
+		}
+	}
+	footer {
+		.inner {
+			.contact {
+				p {
+					text-align: left;
+				}
+			}
+			.copyright {
+				p {
+					text-align: right;
+				}
+			}
 		}
 	}
 }
@@ -704,7 +720,17 @@ and (orientation : landscape) {
 			.contact {
 				border-bottom: none;
 			}
+			.copyright {
+				text-align: right;
+				margin-bottom: 20px;
+				p {
+					font-size: 100%;
+					a {
+						color: $gold;
+					}
+				}
+				
+			}
 		}
-		
 	}
 }

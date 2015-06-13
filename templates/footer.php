@@ -3,7 +3,8 @@
 			<?php $recent = new WP_Query("page_id=163"); while($recent->have_posts()) : $recent->the_post();?>
 				<h1><?php the_title(); ?></h1>
 				<h3><?=types_render_field("excerpt", array("raw"=>"true"))?></h3>
-				<?php endwhile; ?>
+				<?php endwhile; 
+			?>
 			
 			<div class="logos">
 				<?php
@@ -28,7 +29,7 @@
 
 	<footer class="content-info" role="contentinfo">
 	  <div class="inner">
-	  	<div class="col-sm-4 services">
+	  	<div class="col-md-4 services">
 	  		<h3>Our Services</h3>
 	  		<?php
 			$type = 'services';
@@ -45,10 +46,10 @@
 			wp_reset_query();  // Restore global post data stomped by the_post().
 			?>
 	  	</div>
-	  	<div class="col-sm-4 contact">
+	  	<div class="col-md-4 contact">
 	  		<?php echo do_shortcode('[snippet slug="contact" /]'); ?>
   		</div>
-  		<div class="col-sm-4 copyright">
+  		<div class="col-md-4 copyright">
   			<?php echo do_shortcode('[snippet slug="copyright" /]'); ?>
 		</div>
   

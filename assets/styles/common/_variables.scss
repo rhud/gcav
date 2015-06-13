@@ -8,8 +8,9 @@ $sidebar-sm-columns:    4;
 // Brand colors
 // -------------------------
 
-$brand-primary:         #fdbe19;
+$brand-primary: #fdbe19;
 $gold:					#fdbe19;
+$gold-dark:     darken($gold, 10%);
 $yellow:				lighten($gold, 10%);
 
 // Glyphicons path

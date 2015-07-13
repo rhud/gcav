@@ -191,6 +191,7 @@ a {
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
+.icon-search:before { content: '\e800'; } /* '' */
 .icon-location:before { content: '\e80a'; } /* '' */
 .icon-facebook:before { content: '\e80b'; } /* '' */
 .icon-phone:before { content: '\e80c'; } /* '' */
@@ -198,3 +199,4 @@ a {
 .icon-menu:before { content: '\e80e'; } /* '' */
 .icon-twitter:before { content: '\e80f'; } /* '' */
 .icon-instagram:before { content: '\e810'; } /* '' */
+.icon-phone-banner:before { content: '\e801'; } /* '' */

@@ -7,7 +7,7 @@
 }
 
 .phonebanner {
-	width: 250px;
+	width: auto;
 	position: absolute;
 	height: 40px;
 	display: block;
@@ -19,6 +19,7 @@
 	background: rgba(0,0,0,0.50);
 	border: 1px solid $gold;
 	border-top: none;
+	padding: 0px 20px;
 	h3 {
 		font-size: 120%;
 		text-transform: uppercase;

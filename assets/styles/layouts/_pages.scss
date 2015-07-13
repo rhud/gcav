@@ -298,6 +298,7 @@ form {
 			background: none;
 			border-color: $gold;
 			color: white;
+			border-right: none;
 			&:focus {
 				outline: none;
 			}
@@ -316,10 +317,37 @@ form {
 		}
 		span.input-group-btn {
 			button.search-submit.btn {
-				background: $gold;
+				background: none;
 				color: black;
 				border-color: $gold;
 				text-transform: uppercase;
+				border-left: none;
+				i {
+					color: $gold;
+				}
+			}
+		}
+		&:hover {
+			input.search-field.form-control {
+				&::-webkit-input-placeholder { /* WebKit browsers */
+				    color:    rgba(255,255,255,0.75);
+				}
+				&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+				    color:    rgba(255,255,255,0.75);
+				}
+				&::-moz-placeholder { /* Mozilla Firefox 19+ */
+				    color:    rgba(255,255,255,0.75);
+				}
+				&:-ms-input-placeholder { /* Internet Explorer 10+ */
+				    color:    rgba(255,255,255,0.75);
+				}
+			}
+			span.input-group-btn {
+				button.search-submit.btn {
+					i {
+						color: white;
+					}
+				}
 			}
 		}
 	}

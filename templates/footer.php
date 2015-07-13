@@ -1,10 +1,7 @@
 	<section class="brands">
 		<div class="inner">
-			<?php $recent = new WP_Query("page_id=163"); while($recent->have_posts()) : $recent->the_post();?>
-				<h1><?php the_title(); ?></h1>
-				<h3><?=types_render_field("excerpt", array("raw"=>"true"))?></h3>
-				<?php endwhile; 
-			?>
+			<h1>Brands</h1>
+			<h3><?php echo do_shortcode('[snippet slug="brands" /]'); ?></h3>
 			
 			<div class="logos">
 				<?php

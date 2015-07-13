@@ -1,3 +1,4 @@
+<div class="phonebanner"><h3><?php echo do_shortcode('[snippet slug="phone-banner" /]'); ?></h3></div>
 <header class="banner navbar navbar-static-top smartheader" role="banner">
   <div class="container">
     <div class="navbar-header">

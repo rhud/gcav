@@ -31,3 +31,20 @@ unset($file, $filepath);
 
 // Register Custom Navigation Walker
 require_once('wp_bootstrap_navwalker.php');
+
+function new_excerpt_more($more) {
+       global $post;
+    return ' […]<span class="readmore"><a href="'. get_permalink($post->ID) . '">Read More &raquo;</a></span>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+add_theme_support( 'post-thumbnails' ); 
+add_image_size( 'blog-img', 525, 300, true );
+
+add_filter( 'image_size_names_choose', 'hh_custom_sizes' );
+
+function hh_custom_sizes( $sizes ) {
+    return array_merge( $sizes, array(
+        'blog-img' => __( 'Blog Image' )
+    ) );
+}

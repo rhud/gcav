@@ -28,7 +28,7 @@
         var docElem = document.documentElement,
         		smartheader = $(".smartheader"),
         		didScroll = false,
-        		changeHeaderOn = 200;
+        		changeHeaderOn = 10;
         
         	function init() {
         		window.addEventListener( 'scroll', function( event ) {
